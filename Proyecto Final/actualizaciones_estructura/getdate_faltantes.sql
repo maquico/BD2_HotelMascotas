@@ -1,0 +1,17 @@
+ALTER TABLE registro.HISTORICO_ESTATUS
+DROP COLUMN Fecha_Registro
+
+ALTER TABLE registro.HISTORICO_ESTATUS
+ADD Fecha_Registro Datetime Default GETDATE()
+
+ALTER TABLE registro.HISTORICO_SERVICIOS
+DROP COLUMN Fecha_Registro
+
+ALTER TABLE registro.HISTORICO_SERVICIOS
+ADD Fecha_Registro Datetime Default GETDATE()
+
+ALTER TABLE registro.[MASCOTA_CONTACTO]
+DROP COLUMN Fecha_Registro
+
+ALTER TABLE registro.[MASCOTA_CONTACTO]
+ADD Fecha_Registro Datetime Default GETDATE()
